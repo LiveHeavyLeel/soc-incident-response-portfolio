@@ -23,7 +23,7 @@ A simulated HR employee receives a malicious job application email. The investig
 
 [Read the Incident Report](File2-Incident-report)
 
-[View the Evidence Log](phishing-investigation/evidence-log.md)
+[View the Evidence Log](File3-evidence-log)
 
 [View the Remediation Plan](phishing-investigation/remediation-plan.md)
 
