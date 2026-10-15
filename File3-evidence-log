@@ -1,0 +1,59 @@
+
+# Case 001: Evidence Log
+
+## Evidence Classification
+All evidence in this document is fictional and generated for training. None was collected from a real endpoint or email system.
+
+## Evidence Table
+
+| ID | Source | Observation | Assessment |
+| --- | --- | --- | --- |
+| E-001 | Email gateway | Unexpected job application attachment | Suspicious |
+| E-002 | Email content | Archive password supplied in message | Suspicious |
+| E-003 | File metadata | Extracted file named Resume.pdf.exe | High risk |
+| E-004 | Endpoint alert | PowerShell launched shortly after file execution | High risk |
+| E-005 | Network telemetry | Not provided in scenario | Unknown |
+
+## Simulated Email Details
+- Received: 2022-07-20 09:30 EDT
+- Sender: applicant@career-submissions.example
+- Recipient: hr@northstar.example
+- Subject: Application for Engineering Position
+- Attachment: Application_Documents.zip
+- Extracted filename: Resume.pdf.exe
+
+The .example domains are reserved for documentation. These are not indicators from a real incident.
+
+## Simulated Endpoint Alert
+- Timestamp: 2022-07-20 09:35 EDT
+- Host: HR-WKS-014
+- Parent process: Resume.pdf.exe
+- Child process: powershell.exe
+- Detection category: Suspicious script execution
+- Disposition: Requires investigation
+
+## Evidence-Based Conclusions
+- The email used a job application pretext.
+- The attachment contained a misleading executable filename.
+- PowerShell execution was observed after the executable launched.
+- The suspicious sequence warrants urgent escalation.
+
+## Unknowns
+- Whether the executable installed malware
+- Whether persistence was established
+- Whether credentials were stolen
+- Whether outbound command-and-control traffic occurred
+- Whether sensitive data was accessed or exfiltrated
+
+## Next Evidence to Collect
+1. Full original email headers
+2. SHA-256 hash of the extracted executable
+3. Endpoint process tree and command-line telemetry
+4. DNS and network connection logs
+5. Relevant security and authentication events
+
+## Chain-of-Custody Considerations
+For a real incident, record evidence collection time, collector, source device, cryptographic hash, and transfer history.
+
+No real evidence was collected or preserved for this simulated exercise.
+  
