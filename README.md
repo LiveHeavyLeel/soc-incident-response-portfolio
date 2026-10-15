@@ -21,7 +21,7 @@ All incident details and evidence are fictional and were created for educational
 ### Case 001: Phishing Email with Suspicious Attachment
 A simulated HR employee receives a malicious job application email. The investigation evaluates phishing indicators, suspicious attachment activity, possible endpoint compromise, and appropriate response procedures.
 
-[Read the Incident Report](phishing-investigation/incident-report.md)
+[Read the Incident Report](File2-Incident-report)
 
 [View the Evidence Log](phishing-investigation/evidence-log.md)
 
