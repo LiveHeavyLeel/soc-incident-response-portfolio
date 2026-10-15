@@ -1,0 +1,83 @@
+
+# Case 001: Phishing Email Incident Report
+
+## Case Information
+- Incident ID: SOC-2022-001
+- Date: July 20, 2022
+- Initial alert time: 09:35 EDT
+- Severity: High (training classification)
+- Status: Investigation in progress
+- Analyst: SOC Tier 1
+- Environment: Fully simulated
+
+## Executive Summary
+At approximately 09:30 EDT, an HR employee received an email from an individual posing as a job applicant. The email encouraged the employee to open a password-protected attachment allegedly containing application materials.
+
+The employee extracted the archive and launched an executable file disguised as a PDF. At 09:35 EDT, endpoint monitoring detected a suspicious PowerShell process.
+
+The activity is consistent with a phishing attempt involving user execution of a potentially malicious attachment. Further analysis is required to determine whether malware achieved persistence, communicated externally, or accessed sensitive information.
+
+## The Five W's
+
+### Who?
+An unidentified external sender impersonated a job applicant. An HR employee was the targeted recipient. The attacker's identity is unknown.
+
+### What?
+A phishing email delivered a suspicious executable disguised as a resume. Endpoint monitoring later detected abnormal script execution.
+
+### When?
+July 20, 2022, between 09:30 and 09:35 EDT.
+
+### Where?
+The fictional organization's HR mailbox and the employee's Windows workstation.
+
+### Why?
+The likely objective was to trick the employee into running unauthorized code. Data theft or persistent access are possible motives but remain unconfirmed.
+
+## Investigation Timeline
+| Time (EDT) | Event |
+| --- | --- |
+| 09:30 | Phishing email delivered to HR |
+| 09:31 | Employee opens email |
+| 09:33 | Employee extracts attachment |
+| 09:34 | Suspicious executable launched |
+| 09:35 | Endpoint monitoring triggers alert |
+| 09:38 | SOC analyst begins triage |
+
+## Initial Findings
+1. Sender used a job application pretext.
+2. Archive required a password supplied in the email.
+3. Extracted file had a misleading double extension.
+4. Endpoint alert identified suspicious PowerShell execution.
+5. Malware installation, persistence, and data exfiltration are not yet established.
+
+## MITRE ATT&CK Mapping
+- T1566.001 - Spearphishing Attachment: email delivered a suspicious attachment.
+- T1204.002 - User Execution: Malicious File: user launched the disguised executable.
+- T1059.001 - PowerShell: abnormal PowerShell execution was reported by endpoint monitoring.
+
+These mappings describe simulated observations, not proof of every possible follow-on attack.
+
+## Recommended Response
+1. Escalate the high-severity endpoint alert.
+2. Isolate the affected workstation using approved endpoint controls.
+3. Preserve email headers, attachment metadata, and relevant endpoint logs.
+4. Analyze the file safely using authorized tools.
+5. Search for related indicators across other endpoints.
+6. Determine whether credentials, persistence, or sensitive data were affected.
+7. Eradicate confirmed threats and restore the host according to organizational procedures.
+8. Monitor the restored environment for recurring activity.
+
+## Incident Status
+Open. The available evidence establishes suspicious user execution and an endpoint alert. The final scope and impact remain undetermined.
+
+## Lessons Learned
+- Treat unexpected archives and double-extension filenames as suspicious.
+- Report possible phishing promptly.
+- Investigate endpoint alerts using corroborating evidence.
+- Avoid assuming exfiltration or full compromise without supporting data.
+- Document findings separately from hypotheses.
+
+## Disclaimer
+This incident and all evidence are fictional and intended for cybersecurity portfolio training.
+  
