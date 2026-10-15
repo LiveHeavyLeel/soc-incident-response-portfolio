@@ -39,5 +39,5 @@ Incident triage | Phishing analysis | Evidence documentation | Threat intelligen
 This is a fictional training exercise. No real users, organizations, or systems were compromised.
 
 ## Author
-Cybersecurity student and aspiring SOC analyst.
+UMGC Cybersecurity student and aspiring SOC analyst.
   
