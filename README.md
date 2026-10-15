@@ -25,7 +25,7 @@ A simulated HR employee receives a malicious job application email. The investig
 
 [View the Evidence Log](File3-evidence-log)
 
-[View the Remediation Plan](phishing-investigation/remediation-plan.md)
+[View the Remediation Plan](File4-remediation-plan)
 
 ## Frameworks
 - NIST SP 800-61 incident response guidance
