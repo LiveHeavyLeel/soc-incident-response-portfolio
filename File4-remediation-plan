@@ -1,0 +1,64 @@
+
+# Case 001: Remediation and Recovery Plan
+
+## Objective
+Contain the suspected phishing-related endpoint compromise, investigate its scope, eliminate confirmed malicious activity, and reduce the risk of recurrence.
+
+## Phase 1: Identification
+- Validate the endpoint detection alert.
+- Identify the affected account and workstation.
+- Preserve the original email and endpoint telemetry.
+- Search for similar messages across company mailboxes.
+- Escalate based on potential business impact.
+
+## Phase 2: Containment
+- Isolate the suspected endpoint through authorized EDR controls.
+- Quarantine matching phishing messages.
+- Block confirmed malicious indicators after validation.
+- Restrict affected credentials if evidence suggests credential exposure.
+- Record containment times and actions.
+
+## Phase 3: Eradication
+- Identify the malicious executable and its behavior.
+- Inspect for persistence mechanisms and unauthorized modifications.
+- Remove confirmed malicious artifacts using approved procedures.
+- Reimage the workstation if trusted cleanup cannot be established.
+- Address any exploited vulnerabilities or configuration weaknesses.
+
+## Phase 4: Recovery
+- Restore the workstation from a verified trusted image.
+- Apply applicable security patches.
+- Confirm endpoint monitoring and security controls are functioning.
+- Restore normal access after validation and approval.
+- Monitor for recurring suspicious activity.
+
+## Phase 5: Lessons Learned
+- Improve suspicious attachment handling.
+- Reinforce employee phishing reporting procedures.
+- Review email filtering and attachment sandboxing.
+- Evaluate application control policies.
+- Review endpoint alert coverage and response timelines.
+
+## Preventive Controls
+| Control | Purpose |
+| --- | --- |
+| Email filtering | Detect and quarantine suspicious attachments |
+| EDR | Detect abnormal endpoint process behavior |
+| Application control | Restrict unauthorized executable files |
+| MFA | Reduce risk from stolen credentials |
+| Security awareness | Improve employee recognition and reporting |
+| Centralized logging | Support investigation and correlation |
+
+## Verification Checklist
+- [ ] Alert investigated and documented
+- [ ] Affected assets identified
+- [ ] Evidence preserved
+- [ ] Confirmed threats contained
+- [ ] Malicious artifacts removed or host reimaged
+- [ ] Endpoint verified clean before reconnecting
+- [ ] Monitoring verified
+- [ ] Incident reviewed and closed with approval
+
+## Status
+This is a proposed response plan. No remediation actions were performed because this is a simulated incident.
+  
